@@ -34,9 +34,7 @@
 
 <br/><br/>
 ## 2. Problem Definition & Project Purpose
-- 프로야구 관련 신문기사 탐색
 * Problem Definition: `FA 계약규모가 점점 커지면서 실력 대비 과도한 연봉을 받는 사례가 늘어나고 있다.`
-
 * Project Purpose: `지난 5년간 FA 선수들와 비FA 선수들의 기록 통하여 2024년 FA를 자격을 갖출 예정인 KBO 선수들의 FA 연봉 예측`
 
 
