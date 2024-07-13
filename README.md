@@ -44,7 +44,7 @@
 <br/><br/>
 ## 3. Modeling
 - AI 모델 구현 로드맵
-![슬라이드21](https://github.com/user-attachments/assets/2786c617-cbef-439d-9a18-04d6a26ed508)
+![기계학습 4조_발표 PPT_ver 06](https://github.com/user-attachments/assets/3b38857c-4ccf-437f-b962-13c19fd98192)
 
 <br/>
 
