@@ -35,7 +35,7 @@
 <br/><br/>
 ## 2. Problem Definition & Project Purpose
 * Problem Definition: `FA 계약규모가 점점 커지면서 실력 대비 과도한 연봉을 받는 사례가 늘어나고 있다.`
-* Project Purpose: `지난 5년간 FA 선수들와 비FA 선수들의 기록 통하여 2024년 FA를 자격을 갖출 예정인 KBO 선수들의 FA 연봉 예측`
+* Project Purpose: `지난 5년간 FA 선수들와 비FA 선수들의 기록 통하여 2024년 FA를 자격을 갖출 예정인 KBO 선수들의 FA권리 행사시 1년치 연봉 예측`
 
 
 ![기계학습_텀프로젝트_디자인공학전공_4조](https://github.com/jaejunchoe/2023-1_Machine-Learning-Class/assets/157339263/da855a1e-01ec-437a-9d89-0dfacc2c1a31)
@@ -48,47 +48,33 @@
 
 <br/>
 
-- 사용 알고리즘
-  
-(1) Linear Models (선형모델) – 'Linear Regression', 'SVR'
+- 사용 알고리즘: `RandomForestRegressor`
 
-(2) Neural Networks (인공신경망) – 'Neural Network', 'MLPRegression'
+- 하이퍼파라미터: `GridSearchCV를 사용하여 n_estimators, max_depth, min_samples_split, min_samples_leaf 도출`
 
-(3) Ensemble Models (앙상블) – 'Random Forest', 'Neural Network', 'Voting', 'Stacking'
-
-(4) Gradient Boosting (그래디언트 부스팅) – 'LGBM Regression', 'Gradient Boosting Regression'
-
-(5) RNN – 'LSTM'
-
-(6) KNN - 'KNN'
 
 <br/><br/>
 ## 4. Data Analysis And Results 
-- Clustering & AI Model 학습 결과
-
-  **최적 예측 모델** = `Ensemble Model` 
+- 예측 결과
 
 
-     (1) 구미산단 데이터톤 전력사용량 데이터
-     ![image](https://github.com/jaejunchoe/2023-Gumi-Industrial-Complex-Energy-Self-Sufficiency-Datathon/assets/157339263/4c01505b-8f5a-4e1f-882f-9826820a92cd)
+     (1) 예측된 FA 최고 금액 계약 예상자 TOP 4
+     ![슬라이드17](https://github.com/user-attachments/assets/a6163416-a5df-4c34-ba4a-cd53b85e5435)
 
 
 
-     (2) 구미산단 데이터톤 태양광 발전량 데이터
-     ![image](https://github.com/jaejunchoe/2023-Gumi-Industrial-Complex-Energy-Self-Sufficiency-Datathon/assets/157339263/3271426a-e849-440e-bb21-a1c0e6078cbb)
+     (2) 나머지 2024 FA 취득 예정자의 연봉 예측 
+     ![슬라이드18](https://github.com/user-attachments/assets/7c9d0e10-e224-4c65-a823-174d3663352f)
 
 
-
-     (3) 구미 에너지자급자족사업 참여기업 A사 전력량 데이터
-     ![image](https://github.com/jaejunchoe/2023-Gumi-Industrial-Complex-Energy-Self-Sufficiency-Datathon/assets/157339263/81966e72-1443-41c7-b2b9-28e19919435f)
 
 <br/><br/>
 ## 5. Conclusion & Comment
-- 데이터의 크기 및 규모가 크고 개인 노트북을 사용하기에 모델 실행과 디버깅을 하기에 많은 시간이 소요되어 어려움이 존재했다.
-- 팀원 모두가 데이터톤의 경험이 전무했기에 EDA에서 많은 시간이 소요되었다. 특히, 전력량의 시차 연관성을 파악에 많은 고민을 했다.
-- Clustering에서 K-Means Clustering으로만 진행하다가 교수님의 자문을 통해 시계열 클러스터링을 통해서 비슷한 패턴을 갖는 기업끼리 Clustering을 하니 훨씬 수월하게 진행되었다. 
-- 여러 알고리즘들을 구현 및 적용하여 결과를 비교하면서 해당 데이터의 최적 알고리즘을 도출할 수 있었다.
-- 1가지의 알고리즘을 사용한 것과 여러 알고리즘을 활용하는 Ensemble Model의 평가지표값이 차이가 크게 존재하지 않았다. 
+- 결정계수(R2 Score)값이 타자의 경우에는 약 0.52로 나왔지만 투수의 경우에는 약 0.31로 나와 전체적으로 봤을 때, 좋은 모델이라고 보기에는 어렵다.
+- Correlation 분석에서 세이버매트릭스 지표가 FA금액을 결정하는데 있어 많은 연관성을 가졌다는 점에서 
+- 세이버매트릭스(sabermetrics)처럼 통계적으로 세부적이고 과학적 지표가 효과가 있음을  확인할 수 있었다.
+- 투수의 데이터 수가 타자에 비해서 적었다는 점에서 투수의 모델을 구성하고 분석하는데 있어서 아쉬움이 존재했다.
+- 선수들의 FA금액을 판단하는데 있어서 지표만으로 판단하는 것을 섣부른 판단이라는 것을 알게 되었다.
 
 
 
