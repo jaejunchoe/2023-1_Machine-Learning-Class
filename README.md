@@ -59,11 +59,13 @@
 
 
      (1) 예측된 FA 최고 금액 계약 예상자 TOP 4
+  
      ![슬라이드17](https://github.com/user-attachments/assets/a6163416-a5df-4c34-ba4a-cd53b85e5435)
 
 
 
-     (2) 나머지 2024 FA 취득 예정자의 연봉 예측 
+     (2) 나머지 2024 FA 취득 예정자의 연봉 예측
+  
      ![슬라이드18](https://github.com/user-attachments/assets/7c9d0e10-e224-4c65-a823-174d3663352f)
 
 
