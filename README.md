@@ -44,7 +44,7 @@
 <br/><br/>
 ## 3. Modeling
 - AI 모델 구현 로드맵
-![image](https://github.com/jaejunchoe/2023-Gumi-Industrial-Complex-Energy-Self-Sufficiency-Datathon/assets/157339263/b790f4db-db7f-46ac-b2f4-7a73f2e42b43)
+![슬라이드21](https://github.com/user-attachments/assets/2786c617-cbef-439d-9a18-04d6a26ed508)
 
 <br/>
 
