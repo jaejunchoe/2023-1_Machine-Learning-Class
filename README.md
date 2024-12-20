@@ -1,5 +1,6 @@
-# 2023-1_Machine-Learning-Class
-국립금오공과대학교 2023-1학기 기계학습 수업 프로젝트_Prof. 김민준
+# Prediction of 2024 KBO Players' Free Agency Salaries
+국립금오공과대학교 2023-1학기 기계학습 수업 프로젝트_Prof. 김민준 / 2023-1_Machine-Learning-Class
+
 
 <br/><br/>
 
